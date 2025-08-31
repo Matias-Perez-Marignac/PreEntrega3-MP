@@ -71,9 +71,131 @@
         </nav>
     </header>
     <main>
+        <section class="booking-section">
+            <div class="container">
+                <!-- Grid de tarjetas para completar -->
+                <section class="card-grid">
+                    <!-- Datos personales -->
+                    
+                    <article class="card">
+                        <header class="card-header">
+                            <h3 class="card-title">Datos personales</h3>
+                            <p class="card-subtitle">Contanos cómo contactarte</p>
+                        </header>
+
+                        <form class="card-form">
+                            <div class="form-row">
+                                <div class="field">
+                                    <label class="field-label" for="first-name">Nombre</label>
+                                    <input id="first-name" type="text" placeholder="Ej: Juan">
+                                </div>
+                                <div class="field">
+                                    <label class="field-label" for="last-name">Apellido</label>
+                                    <input id="last-name" type="text" placeholder="Ej: Pérez">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="field">
+                                    <label class="field-label" for="email">Email</label>
+                                    <input id="email" type="email" placeholder="juan@mail.com">
+                                </div>
+                                <div class="field">
+                                    <label class="field-label" for="phone">Teléfono</label>
+                                    <input id="phone" type="tel" placeholder="+54 9 11 1234-5678">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <span class="field-label">Preferencia de contacto</span>
+                                <div class="option-group">
+                                    <label class="option"><input type="radio" name="contact"> Email</label>
+                                    <label class="option"><input type="radio" name="contact"> WhatsApp</label>
+                                    <label class="option"><input type="radio" name="contact"> Teléfono</label>
+                                </div>
+                            </div>
+                        </form>
+                    </article>
+
+                    <!-- Vehiculo -->
+                    <article class="card">
+                        <header class="card-header">
+                            <h3 class="card-title">Tu vehículo</h3>
+                            <p class="card-subtitle">Elegí modelo y carrocería</p>
+                        </header>
+
+                        <form class="card-form">
+                            <div class="field">
+                                <label class="field-label" for="brand">Marca</label>
+                                <select id="brand">
+                                    <option>Mercedes-Benz</option>
+                                    <option>Smart</option>
+                                    <option>AMG</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="field">
+                                    <label class="field-label" for="model">Modelo</label>
+                                    <select id="model">
+                                        <option>Clase A</option>
+                                        <option>Clase C</option>
+                                        <option>GLA</option>
+                                        <option>GLC</option>
+                                        <option>EQS</option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label class="field-label" for="year">Año</label>
+                                    <select id="year">
+                                        <option>2025</option>
+                                        <option>2024</option>
+                                        <option>2023</option>
+                                        <option>2022</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </article>
+
+                    <!-- Ubicacion -->
+                    <article class="card">
+                        <header class="card-header">
+                            <h3 class="card-title">Dónde querés hacer la cita</h3>
+                            <p class="card-subtitle">Elegí tu concesionario</p>
+                        </header>
+
+                        <form class="card-form">
+                            <div class="field">
+                                <label class="field-label" for="state">Provincia</label>
+                                <select id="state">
+                                    <option>Buenos Aires</option>
+                                    <option>Córdoba</option>
+                                    <option>Mendoza</option>
+                                    <option>Santa Fe</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label class="field-label" for="city">Ciudad</label>
+                                <input id="city" type="text" placeholder="Ej: Vicente López">
+                            </div>
+
+                            <div class="field">
+                                <label class="field-label" for="dealer">Sucursal</label>
+                                <select id="dealer">
+                                    <option>Concesionario Norte</option>
+                                    <option>Concesionario Centro</option>
+                                    <option>Concesionario Sur</option>
+                                </select>
+                            </div>                            
+                        </form>
+                    </article>
+                </section>
+
 
     </main>
-    
+
     <!-- ===================================================== -->
     <!-- Footer -->
     <!-- ===================================================== -->
