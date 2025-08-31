@@ -473,13 +473,37 @@ body {
 /* ================== Archivo-Comprar ==================== */
 /* ===================================================== */
 
+/* ===== compra titulo ===== */
+.compra-section{
+  padding: clamp(32px, 6vw, 64px) 0;
+  background: #f9fafb; /* leve gris para diferenciar */
+  text-align: center;
+}
+
+.compra-title{
+  font-weight: 700;
+  font-size: clamp(24px, 3.5vw, 36px);
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.compra-text{
+  max-width: 680px;
+  margin-inline: auto;
+  color: #475569; /* slate-600 */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.booking-section {
+  background-color: rgb(37, 37, 37);
+}
 
 
 /* util container  */
 .booking-section .container{
   width: min(1120px, 92vw);
-  margin-inline: auto;
-  padding-top: 12.5rem;
+  margin-inline: auto;  
   padding-bottom: 12.5rem;
 }
 
@@ -590,3 +614,5 @@ body {
 @media (min-width: 680px){
   .form-grid-3{ grid-template-columns: repeat(3, 1fr); }
 }
+
+
