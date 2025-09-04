@@ -7,7 +7,7 @@
   --Ayuda para hacer el footer del sitio:
     =>https://www.youtube.com/watch?v=sgDabqmtLUg
 >Boostraps:
-  =>https://getbootstrap.com/
+  =>https://getbootstrap.com/docs/5.3/getting-started/introduction/ 
 >Imagenes:
   =>https://www.netcarshow.com/  (Una gran cantidad de imagenes las saque de meterme a las paginas de distintas marcas, y descargarlas con "css peeper")
 

@@ -385,7 +385,7 @@ body {
   color: #1e293b;
 }
 
-/* checkbox */
+/* ===== checkbox ===== */
 .vehiculos-page input[type="checkbox"] {
   appearance: none;
   inline-size: 18px;
@@ -438,7 +438,7 @@ body {
   background: #f8fafc;
 }
 
-/* Responsive columnas en checklist */
+/* ===== Responsive columnas en checklist ===== */
 
 @media (min-width: 480px) {
   .vehiculos-page .checklist {
@@ -473,7 +473,7 @@ body {
 /* ================== Archivo-Comprar ==================== */
 /* ===================================================== */
 
-/* ===== compra titulo ===== */
+/* ===== Titulo ===== */
 .compra-section{
   padding: clamp(32px, 6vw, 64px) 0;
   background: #f9fafb; 
@@ -500,7 +500,7 @@ body {
 }
 
 
-/* util container  */
+/* ===== util container =====  */
 
 .booking-section .container{
   width: min(1120px, 92vw);
@@ -784,4 +784,5 @@ body {
   object-fit: cover; 
   display: block; 
 }
+
 
