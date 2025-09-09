@@ -1,0 +1,22 @@
+/* ========= Opciones destacadas ========= */
+.seccion-opciones {
+  background: #000;
+  margin-top: 120px;
+}
+
+.opcion-icono img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.opcion-titulo {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.opcion-titulo span {
+  display: block;
+}

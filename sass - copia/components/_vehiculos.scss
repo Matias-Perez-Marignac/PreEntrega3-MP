@@ -1,0 +1,149 @@
+/* ===================================================== */
+/* ================== Archivo-Vehiculos ==================== */
+/* ===================================================== */
+
+/* ========= Vehículos ========= */
+.vehiculos-page {
+  background: #fafafa;
+  color: #111;
+}
+
+/* ========= Filtros ========= */
+.vehiculos-page .filtros details {
+  border-top: 1px solid #f2f2f2;
+  padding-block: 8px;
+}
+
+.vehiculos-page .filtros details:first-of-type {
+  border-top: 0;
+}
+
+.vehiculos-page .filtros summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 10px 2px;
+  color: #0f172a;
+  font: 700 .98rem/1.15 "Titillium Web", sans-serif;
+  user-select: none;
+}
+
+.vehiculos-page .filtros summary::after {
+  content: "";
+  margin-left: auto;
+  inline-size: 10px;
+  block-size: 10px;
+  border-right: 2px solid #1e293b;
+  border-bottom: 2px solid #1e293b;
+  transform: rotate(-45deg);
+  transition: transform .25s ease;
+}
+
+.vehiculos-page .filtros details[open] > summary::after {
+  transform: rotate(45deg);
+}
+
+.vehiculos-page .checklist {
+  list-style: none;
+  margin: 6px 0 10px;
+  padding: 0 2px;
+  columns: 1;
+  column-gap: 18px;
+}
+
+.vehiculos-page .checklist li {
+  break-inside: avoid;
+  padding: 4px 0;
+}
+
+.vehiculos-page .checklist label {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  font: 500 .95rem/1.2 "Titillium Web", sans-serif;
+  color: #1e293b;
+}
+
+/* ===== checkbox ===== */
+.vehiculos-page input[type="checkbox"] {
+  appearance: none;
+  inline-size: 18px;
+  block-size: 18px;
+  border: 2px solid #cbd5e1;
+  border-radius: 6px;
+  display: inline-grid;
+  place-content: center;
+  background: #fff;
+  transition: .2s;
+}
+
+.vehiculos-page input[type="checkbox"]::before {
+  content: "";
+  inline-size: 10px;
+  block-size: 10px;
+  transform: scale(0);
+  transition: .18s;
+  background: #1e293b;
+}
+
+.vehiculos-page input[type="checkbox"]:checked {
+  border-color: #000000;
+  background: #e0f2fe;
+  box-shadow: 0 0 0 3px rgba(32, 4, 4, 0.13);
+}
+
+.vehiculos-page input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.vehiculos-page .rango {
+  display: grid;
+  grid-template-columns: 44px 1fr 40px 1fr;
+  gap: 8px;
+  align-items: center;
+  margin: 4px 2px 10px;
+}
+
+.vehiculos-page .rango label {
+  font: 600 .75rem/1 "Titillium Web", sans-serif;
+  color: #060d18;
+}
+
+.vehiculos-page input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+/* ===== Responsive columnas en checklist ===== */
+@media (min-width: 480px) {
+  .vehiculos-page .checklist {
+    columns: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vehiculos-page .checklist {
+    columns: 3;
+  }
+}
+
+/* ========= Cards del listado ========= */
+.vehiculos-page .auto-card {
+  transition: transform .2s ease, box-shadow .2s ease;
+  border-radius: 12px;
+}
+
+.vehiculos-page .auto-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .12);
+}
+
+.vehiculos-page .auto-card img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
