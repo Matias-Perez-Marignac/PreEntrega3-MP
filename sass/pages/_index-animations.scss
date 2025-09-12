@@ -1,0 +1,65 @@
+// =======================================
+// Página: Index (animación al cargar, CSS-only)
+// =======================================
+@use "../utilities/motion";
+
+// ---------- Marketing (hero) ----------
+.marketing-section {
+  .marketing-content {
+    h2 { @include motion.motion-initial; @include motion.from-left; }
+    p  { @include motion.motion-initial; @include motion.from-top;  }
+  }
+}
+
+// ---------- Vehicle catalog preview ----------
+.vehicle-section {
+  // Camaro
+  .camaro {
+    .camaro-media   { @include motion.motion-initial; @include motion.from-left; }
+    .camaro-content { @include motion.motion-initial; @include motion.from-right; animation-delay: 120ms; }
+    .camaro-title   { @include motion.motion-initial; @include motion.from-right; animation-delay: 200ms; }
+    .camaro-text    { @include motion.motion-initial; @include motion.from-right; animation-delay: 280ms; }
+  }
+
+  // Mustang
+  .mustang {
+    .mustang-text  { @include motion.motion-initial; @include motion.from-left;  }
+    .mustang-media { @include motion.motion-initial; @include motion.from-right; animation-delay: 140ms; }
+  }
+}
+
+// ---------- Opciones destacadas ----------
+.seccion-opciones {
+  .row {
+    @include motion.motion-seq;
+    @include motion.seq-from-bottom;
+  }
+}
+
+// ---------- Beneficios ----------
+.seccion-destacados {
+  .row {
+    @include motion.motion-seq;
+    @include motion.seq-from-bottom;
+  }
+
+  .tarjeta {
+    .tarjeta-imagen   { @include motion.motion-initial; @include motion.from-top; }
+    .tarjeta-etiqueta { @include motion.motion-initial; @include motion.from-bottom; animation-delay: 120ms; }
+    .tarjeta-titulo   { @include motion.motion-initial; @include motion.from-bottom; animation-delay: 200ms; }
+  }
+}
+
+// ---------- Footer ----------
+.pie-sitio {
+  .rejilla-pie {
+    @include motion.motion-seq;
+    @include motion.seq-from-top;
+  }
+  .base-pie {
+    @include motion.motion-seq;
+    @include motion.seq-from-bottom;
+  }
+}
+
+

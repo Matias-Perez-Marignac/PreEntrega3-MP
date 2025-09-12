@@ -1,7 +1,8 @@
-// UTILITIES (si tenés _a11y.scss)
+// UTILITIES
 @use "utilities/a11y";
+@use "utilities/motion";
 
-// BASE (estos sí existen en tu captura)
+// BASE 
 @use "base/normalize";
 @use "base/reset";
 @use "base/typography";
@@ -19,3 +20,7 @@
 @use "components/vehiculos";
 @use "components/comprar";
 @use "components/corolla";
+
+// PAGES
+@use "pages/index-animations";
+

@@ -1,0 +1,50 @@
+// ==============================
+// Utilities: Motion (CSS-only)
+// ==============================
+$motion-distance: 12vh;
+$motion-duration: 700ms;
+$motion-delay-step: 120ms;
+$motion-ease: cubic-bezier(.22,.61,.36,1);
+
+// Accesibilidad
+@media (prefers-reduced-motion: reduce) {
+  .motion-seq > *, .motion-init {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+// ---------- Keyframes ----------
+@keyframes motion-in-from-left   { from { transform: translateX(-$motion-distance); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes motion-in-from-right  { from { transform: translateX( $motion-distance); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes motion-in-from-top    { from { transform: translateY(-$motion-distance); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes motion-in-from-bottom { from { transform: translateY( $motion-distance); opacity: 0; } to { transform: none; opacity: 1; } }
+
+// ========== MIXINS ==========
+@mixin motion-initial { opacity: 0; }
+
+@mixin from-left   { animation: motion-in-from-left   $motion-duration $motion-ease both; }
+@mixin from-right  { animation: motion-in-from-right  $motion-duration $motion-ease both; }
+@mixin from-top    { animation: motion-in-from-top    $motion-duration $motion-ease both; }
+@mixin from-bottom { animation: motion-in-from-bottom $motion-duration $motion-ease both; }
+
+@mixin motion-seq {
+  > * {
+    opacity: 0;
+    animation: motion-in-from-bottom $motion-duration $motion-ease both;
+  }
+  > *:nth-child(1) { animation-delay: $motion-delay-step * 0; }
+  > *:nth-child(2) { animation-delay: $motion-delay-step * 1; }
+  > *:nth-child(3) { animation-delay: $motion-delay-step * 2; }
+  > *:nth-child(4) { animation-delay: $motion-delay-step * 3; }
+  > *:nth-child(5) { animation-delay: $motion-delay-step * 4; }
+  > *:nth-child(6) { animation-delay: $motion-delay-step * 5; }
+}
+
+@mixin seq-from-left   { > * { animation-name: motion-in-from-left;   } }
+@mixin seq-from-right  { > * { animation-name: motion-in-from-right;  } }
+@mixin seq-from-top    { > * { animation-name: motion-in-from-top;    } }
+@mixin seq-from-bottom { > * { animation-name: motion-in-from-bottom; } }
+

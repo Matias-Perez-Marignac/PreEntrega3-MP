@@ -11,6 +11,54 @@
   border: 0;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .motion-seq > *, .motion-init {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+@keyframes motion-in-from-left {
+  from {
+    transform: translateX(-12vh);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes motion-in-from-right {
+  from {
+    transform: translateX(12vh);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes motion-in-from-top {
+  from {
+    transform: translateY(-12vh);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes motion-in-from-bottom {
+  from {
+    transform: translateY(12vh);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
 /* Reset y fuente */
 * {
   box-sizing: border-box;
@@ -630,6 +678,161 @@ body {
   height: 200px;
   object-fit: cover;
   display: block;
+}
+
+.marketing-section .marketing-content h2 {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.marketing-section .marketing-content p {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+.vehicle-section .camaro .camaro-media {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.vehicle-section .camaro .camaro-content {
+  opacity: 0;
+  animation: motion-in-from-right 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 120ms;
+}
+.vehicle-section .camaro .camaro-title {
+  opacity: 0;
+  animation: motion-in-from-right 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 200ms;
+}
+.vehicle-section .camaro .camaro-text {
+  opacity: 0;
+  animation: motion-in-from-right 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 280ms;
+}
+.vehicle-section .mustang .mustang-text {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.vehicle-section .mustang .mustang-media {
+  opacity: 0;
+  animation: motion-in-from-right 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 140ms;
+}
+
+.seccion-opciones .row > * {
+  opacity: 0;
+  animation: motion-in-from-bottom 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.seccion-opciones .row > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+.seccion-opciones .row > *:nth-child(2) {
+  animation-delay: 120ms;
+}
+.seccion-opciones .row > *:nth-child(3) {
+  animation-delay: 240ms;
+}
+.seccion-opciones .row > *:nth-child(4) {
+  animation-delay: 360ms;
+}
+.seccion-opciones .row > *:nth-child(5) {
+  animation-delay: 480ms;
+}
+.seccion-opciones .row > *:nth-child(6) {
+  animation-delay: 600ms;
+}
+.seccion-opciones .row > * {
+  animation-name: motion-in-from-bottom;
+}
+
+.seccion-destacados .row > * {
+  opacity: 0;
+  animation: motion-in-from-bottom 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.seccion-destacados .row > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+.seccion-destacados .row > *:nth-child(2) {
+  animation-delay: 120ms;
+}
+.seccion-destacados .row > *:nth-child(3) {
+  animation-delay: 240ms;
+}
+.seccion-destacados .row > *:nth-child(4) {
+  animation-delay: 360ms;
+}
+.seccion-destacados .row > *:nth-child(5) {
+  animation-delay: 480ms;
+}
+.seccion-destacados .row > *:nth-child(6) {
+  animation-delay: 600ms;
+}
+.seccion-destacados .row > * {
+  animation-name: motion-in-from-bottom;
+}
+.seccion-destacados .tarjeta .tarjeta-imagen {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.seccion-destacados .tarjeta .tarjeta-etiqueta {
+  opacity: 0;
+  animation: motion-in-from-bottom 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 120ms;
+}
+.seccion-destacados .tarjeta .tarjeta-titulo {
+  opacity: 0;
+  animation: motion-in-from-bottom 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 200ms;
+}
+
+.pie-sitio .rejilla-pie > * {
+  opacity: 0;
+  animation: motion-in-from-bottom 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.pie-sitio .rejilla-pie > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+.pie-sitio .rejilla-pie > *:nth-child(2) {
+  animation-delay: 120ms;
+}
+.pie-sitio .rejilla-pie > *:nth-child(3) {
+  animation-delay: 240ms;
+}
+.pie-sitio .rejilla-pie > *:nth-child(4) {
+  animation-delay: 360ms;
+}
+.pie-sitio .rejilla-pie > *:nth-child(5) {
+  animation-delay: 480ms;
+}
+.pie-sitio .rejilla-pie > *:nth-child(6) {
+  animation-delay: 600ms;
+}
+.pie-sitio .rejilla-pie > * {
+  animation-name: motion-in-from-top;
+}
+.pie-sitio .base-pie > * {
+  opacity: 0;
+  animation: motion-in-from-bottom 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.pie-sitio .base-pie > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+.pie-sitio .base-pie > *:nth-child(2) {
+  animation-delay: 120ms;
+}
+.pie-sitio .base-pie > *:nth-child(3) {
+  animation-delay: 240ms;
+}
+.pie-sitio .base-pie > *:nth-child(4) {
+  animation-delay: 360ms;
+}
+.pie-sitio .base-pie > *:nth-child(5) {
+  animation-delay: 480ms;
+}
+.pie-sitio .base-pie > *:nth-child(6) {
+  animation-delay: 600ms;
+}
+.pie-sitio .base-pie > * {
+  animation-name: motion-in-from-bottom;
 }
 
 /*# sourceMappingURL=styles.css.map */
