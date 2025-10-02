@@ -11,6 +11,412 @@
   border: 0;
 }
 
+/* ===== Mercedes-Benz Clase C — Presentación ===== */
+.mbc-scope .mbc-container {
+  width: min(100% - 32px, 1200px);
+  margin-inline: auto;
+}
+.mbc-scope *,
+.mbc-scope *::before,
+.mbc-scope *::after {
+  box-sizing: border-box;
+}
+.mbc-scope {
+  color: #0f1115;
+  background: #fff;
+  font-family: "Titillium Web", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.36;
+  /* ------------ Componentes básicos ------------ */
+}
+.mbc-scope .mbc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+.mbc-scope .mbc-btn:focus-visible {
+  outline: 3px solid #d1d5db;
+  outline-offset: 2px;
+}
+.mbc-scope .mbc-btn-primary {
+  background: #111;
+  color: #fff;
+}
+.mbc-scope .mbc-btn-primary:hover {
+  filter: brightness(0.95);
+}
+.mbc-scope .mbc-btn-outline {
+  background: #fff;
+  color: #0f1115;
+  border-color: #e5e7eb;
+}
+.mbc-scope .mbc-btn-outline:hover {
+  border-color: #2b2f37;
+}
+.mbc-scope .mbc-section {
+  padding-block: 64px;
+}
+.mbc-scope .mbc-section-head {
+  margin-bottom: 32px;
+}
+.mbc-scope .mbc-section-title {
+  font-weight: 900;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+.mbc-scope .mbc-section-sub {
+  color: #6b7280;
+  max-width: 60ch;
+}
+.mbc-scope {
+  /* ------------ HERO ------------ */
+}
+.mbc-scope .mbc-hero {
+  padding-block: 72px;
+}
+.mbc-scope .mbc-hero .mbc-hero-grid {
+  display: grid;
+  gap: 40px;
+  align-items: center;
+}
+.mbc-scope .mbc-hero .mbc-hero-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+}
+.mbc-scope .mbc-hero .mbc-hero-title span {
+  color: #111;
+}
+.mbc-scope .mbc-hero .mbc-hero-text {
+  color: #6b7280;
+  margin-top: 12px;
+  max-width: 48ch;
+}
+.mbc-scope .mbc-hero .mbc-hero-bullets {
+  margin: 20px 0;
+  padding-left: 20px;
+  color: #2b2f37;
+}
+.mbc-scope .mbc-hero .mbc-cta-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.mbc-scope .mbc-hero .mbc-hero-media {
+  position: relative;
+}
+.mbc-scope .mbc-hero .mbc-hero-accent {
+  position: absolute;
+  right: 8%;
+  top: -8%;
+  bottom: -8%;
+  width: clamp(180px, 40vw, 360px);
+  background: #111;
+  border-radius: 20px;
+  opacity: 0.85;
+  z-index: 0;
+}
+.mbc-scope .mbc-hero .mbc-hero-image {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 720px);
+}
+@media (min-width: 900px) {
+  .mbc-scope .mbc-hero .mbc-hero-grid {
+    grid-template-columns: 1.05fr 1fr;
+  }
+}
+.mbc-scope {
+  /* ------------ Highlights / Value props ------------ */
+}
+.mbc-scope .mbc-highlights {
+  background: #f6f7f8;
+}
+.mbc-scope .mbc-highlights .mbc-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.mbc-scope .mbc-highlights .mbc-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 28px rgba(15, 17, 21, 0.06);
+}
+.mbc-scope .mbc-highlights .mbc-card-title {
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.mbc-scope .mbc-highlights .mbc-card-text {
+  color: #2b2f37;
+}
+.mbc-scope {
+  /* ------------ Experience ------------ */
+}
+.mbc-scope .mbc-experience .mbc-steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.mbc-scope .mbc-experience .mbc-step {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 28px rgba(15, 17, 21, 0.06);
+}
+.mbc-scope .mbc-experience .mbc-step-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.mbc-scope .mbc-experience .mbc-step-badge {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font-weight: 900;
+  font-size: clamp(2.4rem, 7vw, 4.6rem);
+  color: rgba(17, 17, 17, 0.14);
+}
+.mbc-scope .mbc-experience .mbc-step-title {
+  font-weight: 800;
+  padding: 16px 16px 0;
+}
+.mbc-scope .mbc-experience .mbc-step-text {
+  color: #2b2f37;
+  padding: 0 16px 20px;
+}
+.mbc-scope {
+  /* ------------ Specs ------------ */
+}
+.mbc-scope .mbc-specs {
+  background: #f6f7f8;
+}
+.mbc-scope .mbc-specs .mbc-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.mbc-scope .mbc-specs .mbc-spec-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 28px rgba(15, 17, 21, 0.06);
+}
+.mbc-scope .mbc-specs .mbc-spec-list {
+  margin: 0;
+  padding-left: 20px;
+  color: #2b2f37;
+}
+.mbc-scope .mbc-specs .mbc-spec-cta {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.mbc-scope {
+  /* ------------ Gallery ------------ */
+}
+.mbc-scope .mbc-gallery .mbc-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+.mbc-scope .mbc-gallery .mbc-gallery-img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+  border: 1px solid #e5e7eb;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-seq > *, .motion-init {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+@keyframes motion-in-from-left {
+  from {
+    transform: translateX(-12vh);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes motion-in-from-right {
+  from {
+    transform: translateX(12vh);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes motion-in-from-top {
+  from {
+    transform: translateY(-12vh);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes motion-in-from-bottom {
+  from {
+    transform: translateY(12vh);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+/* ===== Animaciones: Mercedes-Benz Clase C ===== */
+.mbc-scope {
+  /* ---------- HERO ---------- */
+}
+.mbc-scope .mbc-hero .mbc-hero-title {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.mbc-scope .mbc-hero .mbc-hero-text {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 90ms;
+}
+.mbc-scope .mbc-hero .mbc-hero-bullets {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 160ms;
+}
+.mbc-scope .mbc-hero .mbc-cta-group {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 230ms;
+}
+.mbc-scope .mbc-hero .mbc-hero-media {
+  position: relative;
+}
+.mbc-scope .mbc-hero .mbc-hero-accent {
+  opacity: 0;
+  animation: motion-in-from-right 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 80ms;
+}
+.mbc-scope .mbc-hero .mbc-hero-image {
+  opacity: 0;
+  animation: motion-in-from-right 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 160ms;
+}
+.mbc-scope {
+  /* ---------- HIGHLIGHTS (cards) ---------- */
+}
+.mbc-scope .mbc-highlights .mbc-card {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.mbc-scope .mbc-highlights .mbc-card:nth-child(1) {
+  animation-delay: 60ms;
+}
+.mbc-scope .mbc-highlights .mbc-card:nth-child(2) {
+  animation-delay: 140ms;
+}
+.mbc-scope .mbc-highlights .mbc-card:nth-child(3) {
+  animation-delay: 220ms;
+}
+.mbc-scope {
+  /* ---------- EXPERIENCE (pasos) ---------- */
+}
+.mbc-scope .mbc-experience .mbc-step {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.mbc-scope .mbc-experience .mbc-step:nth-child(1) {
+  animation-delay: 60ms;
+}
+.mbc-scope .mbc-experience .mbc-step:nth-child(2) {
+  animation-delay: 140ms;
+}
+.mbc-scope .mbc-experience .mbc-step:nth-child(3) {
+  animation-delay: 220ms;
+}
+.mbc-scope .mbc-experience .mbc-step .mbc-step-img {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 80ms;
+}
+.mbc-scope {
+  /* ---------- SPECS ---------- */
+}
+.mbc-scope .mbc-specs .mbc-spec-card {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.mbc-scope .mbc-specs .mbc-spec-card:nth-child(1) {
+  animation-delay: 60ms;
+}
+.mbc-scope .mbc-specs .mbc-spec-card:nth-child(2) {
+  animation-delay: 140ms;
+}
+.mbc-scope .mbc-specs .mbc-spec-card:nth-child(3) {
+  animation-delay: 220ms;
+}
+.mbc-scope .mbc-specs .mbc-spec-cta {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 260ms;
+}
+.mbc-scope {
+  /* ---------- GALLERY ---------- */
+}
+.mbc-scope .mbc-gallery .mbc-gallery-img {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.mbc-scope .mbc-gallery .mbc-gallery-img:nth-child(1) {
+  animation-delay: 60ms;
+}
+.mbc-scope .mbc-gallery .mbc-gallery-img:nth-child(2) {
+  animation-delay: 140ms;
+}
+.mbc-scope .mbc-gallery .mbc-gallery-img:nth-child(3) {
+  animation-delay: 220ms;
+}
+.mbc-scope {
+  /* ---------- Accesibilidad: reduce motion ---------- */
+}
+@media (prefers-reduced-motion: reduce) {
+  .mbc-scope .mbc-hero-title,
+  .mbc-scope .mbc-hero-text,
+  .mbc-scope .mbc-hero-bullets,
+  .mbc-scope .mbc-cta-group,
+  .mbc-scope .mbc-hero-accent,
+  .mbc-scope .mbc-hero-image,
+  .mbc-scope .mbc-card,
+  .mbc-scope .mbc-step,
+  .mbc-scope .mbc-step .mbc-step-img,
+  .mbc-scope .mbc-spec-card,
+  .mbc-scope .mbc-spec-cta,
+  .mbc-scope .mbc-gallery-img {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .motion-seq > *, .motion-init {
     animation: none !important;
@@ -524,6 +930,203 @@ body {
   object-fit: cover;
 }
 
+/* ===== Booking Appointment (paleta B/N, elegante) ===== */
+.booking-scope .booking-container {
+  width: min(100% - 32px, 1100px);
+  margin-inline: auto;
+}
+.booking-scope *,
+.booking-scope *::before,
+.booking-scope *::after {
+  box-sizing: border-box;
+}
+.booking-scope {
+  font-family: inherit;
+  color: #0f1115;
+  background: #fff;
+  line-height: 1.36;
+  /* ---- Botones ---- */
+}
+.booking-scope .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+.booking-scope .btn:focus-visible {
+  outline: 3px solid #d1d5db;
+  outline-offset: 2px;
+}
+.booking-scope .btn-primary {
+  background: #111;
+  color: #fff;
+}
+.booking-scope .btn-primary:hover {
+  filter: brightness(0.95);
+}
+.booking-scope .btn-outline {
+  background: #fff;
+  color: #0f1115;
+  border-color: #e7e7e9;
+}
+.booking-scope .btn-outline:hover {
+  border-color: #2b2f37;
+}
+.booking-scope {
+  /* ---- Hero ---- */
+}
+.booking-scope .booking-hero {
+  padding-block: 64px 40px;
+}
+.booking-scope .hero-grid {
+  display: grid;
+  gap: 40px;
+  align-items: center;
+}
+.booking-scope .hero-title {
+  font-size: clamp(1.9rem, 4.5vw, 2.6rem);
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+.booking-scope .hero-text {
+  color: #6b7280;
+  margin-top: 8px;
+  max-width: 60ch;
+}
+.booking-scope .hero-bullets {
+  margin: 20px 0 0;
+  padding-left: 20px;
+  color: #2b2f37;
+}
+.booking-scope .hero-art {
+  position: relative;
+  height: 160px;
+}
+.booking-scope .hero-accent {
+  position: absolute;
+  inset: 0 0 0 0;
+  border-radius: 20px;
+  background: radial-gradient(80% 120% at 100% 0%, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.04));
+}
+@media (min-width: 900px) {
+  .booking-scope .hero-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+  .booking-scope .hero-art {
+    height: 220px;
+  }
+}
+.booking-scope {
+  /* ---- Form ---- */
+}
+.booking-scope .booking-section {
+  padding-block: 32px 64px;
+  background: #ffffff;
+}
+.booking-scope .section-title {
+  font-weight: 900;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  margin-bottom: 24px;
+}
+.booking-scope .form-shell {
+  display: grid;
+  gap: 24px;
+}
+.booking-scope .form-card {
+  background: #f6f7f8;
+  border: 1px solid #e7e7e9;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 28px rgba(15, 17, 21, 0.06);
+}
+.booking-scope .card-title {
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.booking-scope .grid-2,
+.booking-scope .grid-3 {
+  display: grid;
+  gap: 16px;
+}
+.booking-scope .grid-2 {
+  grid-template-columns: 1fr;
+}
+.booking-scope .grid-3 {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 760px) {
+  .booking-scope .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 980px) {
+  .booking-scope .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.booking-scope .form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.booking-scope .field-label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #2b2f37;
+}
+.booking-scope .field-input {
+  appearance: none;
+  background: #fff;
+  border: 1px solid #e7e7e9;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font: inherit;
+  color: #0f1115;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.booking-scope .field-input:focus {
+  outline: none;
+  border-color: #111;
+  box-shadow: 0 0 0 4px rgba(17, 17, 17, 0.08);
+}
+.booking-scope select.field-input {
+  background-image: none;
+}
+.booking-scope .form-field-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.booking-scope .choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #2b2f37;
+}
+.booking-scope .form-consent {
+  margin-top: 8px;
+}
+.booking-scope .consent {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  color: #2b2f37;
+}
+.booking-scope .form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
 /* ===================================================== */
 /* ================== Archivo-Toyota Corolla ==================== */
 /* ===================================================== */
@@ -680,6 +1283,462 @@ body {
   display: block;
 }
 
+/* ===== Mercedes-Benz Clase C — Presentación ===== */
+.mbc-scope .mbc-container {
+  width: min(100% - 32px, 1200px);
+  margin-inline: auto;
+}
+.mbc-scope *,
+.mbc-scope *::before,
+.mbc-scope *::after {
+  box-sizing: border-box;
+}
+.mbc-scope {
+  color: #0f1115;
+  background: #fff;
+  font-family: "Titillium Web", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.36;
+  /* ------------ Componentes básicos ------------ */
+}
+.mbc-scope .mbc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+.mbc-scope .mbc-btn:focus-visible {
+  outline: 3px solid #d1d5db;
+  outline-offset: 2px;
+}
+.mbc-scope .mbc-btn-primary {
+  background: #111;
+  color: #fff;
+}
+.mbc-scope .mbc-btn-primary:hover {
+  filter: brightness(0.95);
+}
+.mbc-scope .mbc-btn-outline {
+  background: #fff;
+  color: #0f1115;
+  border-color: #e5e7eb;
+}
+.mbc-scope .mbc-btn-outline:hover {
+  border-color: #2b2f37;
+}
+.mbc-scope .mbc-section {
+  padding-block: 64px;
+}
+.mbc-scope .mbc-section-head {
+  margin-bottom: 32px;
+}
+.mbc-scope .mbc-section-title {
+  font-weight: 900;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+.mbc-scope .mbc-section-sub {
+  color: #6b7280;
+  max-width: 60ch;
+}
+.mbc-scope {
+  /* ------------ HERO ------------ */
+}
+.mbc-scope .mbc-hero {
+  padding-block: 72px;
+}
+.mbc-scope .mbc-hero .mbc-hero-grid {
+  display: grid;
+  gap: 40px;
+  align-items: center;
+}
+.mbc-scope .mbc-hero .mbc-hero-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+}
+.mbc-scope .mbc-hero .mbc-hero-title span {
+  color: #111;
+}
+.mbc-scope .mbc-hero .mbc-hero-text {
+  color: #6b7280;
+  margin-top: 12px;
+  max-width: 48ch;
+}
+.mbc-scope .mbc-hero .mbc-hero-bullets {
+  margin: 20px 0;
+  padding-left: 20px;
+  color: #2b2f37;
+}
+.mbc-scope .mbc-hero .mbc-cta-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.mbc-scope .mbc-hero .mbc-hero-media {
+  position: relative;
+}
+.mbc-scope .mbc-hero .mbc-hero-accent {
+  position: absolute;
+  right: 8%;
+  top: -8%;
+  bottom: -8%;
+  width: clamp(180px, 40vw, 360px);
+  background: #111;
+  border-radius: 20px;
+  opacity: 0.85;
+  z-index: 0;
+}
+.mbc-scope .mbc-hero .mbc-hero-image {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 720px);
+}
+@media (min-width: 900px) {
+  .mbc-scope .mbc-hero .mbc-hero-grid {
+    grid-template-columns: 1.05fr 1fr;
+  }
+}
+.mbc-scope {
+  /* ------------ Highlights / Value props ------------ */
+}
+.mbc-scope .mbc-highlights {
+  background: #f6f7f8;
+}
+.mbc-scope .mbc-highlights .mbc-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.mbc-scope .mbc-highlights .mbc-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 28px rgba(15, 17, 21, 0.06);
+}
+.mbc-scope .mbc-highlights .mbc-card-title {
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.mbc-scope .mbc-highlights .mbc-card-text {
+  color: #2b2f37;
+}
+.mbc-scope {
+  /* ------------ Experience ------------ */
+}
+.mbc-scope .mbc-experience .mbc-steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.mbc-scope .mbc-experience .mbc-step {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 28px rgba(15, 17, 21, 0.06);
+}
+.mbc-scope .mbc-experience .mbc-step-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.mbc-scope .mbc-experience .mbc-step-badge {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font-weight: 900;
+  font-size: clamp(2.4rem, 7vw, 4.6rem);
+  color: rgba(17, 17, 17, 0.14);
+}
+.mbc-scope .mbc-experience .mbc-step-title {
+  font-weight: 800;
+  padding: 16px 16px 0;
+}
+.mbc-scope .mbc-experience .mbc-step-text {
+  color: #2b2f37;
+  padding: 0 16px 20px;
+}
+.mbc-scope {
+  /* ------------ Specs ------------ */
+}
+.mbc-scope .mbc-specs {
+  background: #f6f7f8;
+}
+.mbc-scope .mbc-specs .mbc-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.mbc-scope .mbc-specs .mbc-spec-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 28px rgba(15, 17, 21, 0.06);
+}
+.mbc-scope .mbc-specs .mbc-spec-list {
+  margin: 0;
+  padding-left: 20px;
+  color: #2b2f37;
+}
+.mbc-scope .mbc-specs .mbc-spec-cta {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.mbc-scope {
+  /* ------------ Gallery ------------ */
+}
+.mbc-scope .mbc-gallery .mbc-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+.mbc-scope .mbc-gallery .mbc-gallery-img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+  border: 1px solid #e5e7eb;
+}
+
+/* ===== Volkswagen T-Cross — Presentación ===== */
+.tcr-scope .tcr-container {
+  width: min(100% - 32px, 1200px);
+  margin-inline: auto;
+}
+.tcr-scope *,
+.tcr-scope *::before,
+.tcr-scope *::after {
+  box-sizing: border-box;
+}
+.tcr-scope {
+  color: #0f1115;
+  background: #fff;
+  font-family: inherit;
+  line-height: 1.36;
+  /* ---- Reusables ---- */
+}
+.tcr-scope .tcr-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+.tcr-scope .tcr-btn:focus-visible {
+  outline: 3px solid #d1d5db;
+  outline-offset: 2px;
+}
+.tcr-scope .tcr-btn-primary {
+  background: #111;
+  color: #fff;
+}
+.tcr-scope .tcr-btn-primary:hover {
+  filter: brightness(0.95);
+}
+.tcr-scope .tcr-btn-outline {
+  background: #fff;
+  color: #0f1115;
+  border-color: #e5e7eb;
+}
+.tcr-scope .tcr-btn-outline:hover {
+  border-color: #2b2f37;
+}
+.tcr-scope .tcr-section {
+  padding-block: 64px;
+}
+.tcr-scope .tcr-section-head {
+  margin-bottom: 32px;
+}
+.tcr-scope .tcr-section-title {
+  font-weight: 900;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+.tcr-scope .tcr-section-sub {
+  color: #6b7280;
+  max-width: 60ch;
+}
+.tcr-scope {
+  /* ---- HERO  ---- */
+}
+.tcr-scope .tcr-hero {
+  padding-block: 72px;
+}
+.tcr-scope .tcr-hero .tcr-hero-grid {
+  display: grid;
+  gap: 40px;
+  align-items: center;
+}
+.tcr-scope .tcr-hero .tcr-hero-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+}
+.tcr-scope .tcr-hero .tcr-hero-title span {
+  color: #111;
+}
+.tcr-scope .tcr-hero .tcr-hero-text {
+  color: #6b7280;
+  margin-top: 12px;
+  max-width: 48ch;
+}
+.tcr-scope .tcr-hero .tcr-hero-bullets {
+  margin: 20px 0;
+  padding-left: 20px;
+  color: #2b2f37;
+}
+.tcr-scope .tcr-hero .tcr-cta-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.tcr-scope .tcr-hero .tcr-hero-media {
+  position: relative;
+  order: -1;
+}
+.tcr-scope .tcr-hero .tcr-hero-accent {
+  position: absolute;
+  left: -4%;
+  top: -8%;
+  bottom: -8%;
+  width: clamp(160px, 36vw, 320px);
+  background: #111;
+  border-radius: 18px;
+  opacity: 0.08;
+  z-index: 0;
+}
+.tcr-scope .tcr-hero .tcr-hero-image {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 680px);
+}
+@media (min-width: 980px) {
+  .tcr-scope .tcr-hero .tcr-hero-grid {
+    grid-template-columns: 1fr 1.05fr;
+  }
+  .tcr-scope .tcr-hero .tcr-hero-media {
+    order: 0;
+  }
+}
+.tcr-scope {
+  /* ---- Highlights ---- */
+}
+.tcr-scope .tcr-highlights {
+  background: #f6f7f8;
+}
+.tcr-scope .tcr-highlights .tcr-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.tcr-scope .tcr-highlights .tcr-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 28px rgba(15, 17, 21, 0.06);
+}
+.tcr-scope .tcr-highlights .tcr-card-title {
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.tcr-scope .tcr-highlights .tcr-card-text {
+  color: #2b2f37;
+}
+.tcr-scope {
+  /* ---- Experiencia ---- */
+}
+.tcr-scope .tcr-experience .tcr-steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.tcr-scope .tcr-experience .tcr-step {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 28px rgba(15, 17, 21, 0.06);
+}
+.tcr-scope .tcr-experience .tcr-step-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.tcr-scope .tcr-experience .tcr-step-badge {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font-weight: 900;
+  font-size: clamp(2.4rem, 7vw, 4.6rem);
+  color: rgba(17, 17, 17, 0.14);
+}
+.tcr-scope .tcr-experience .tcr-step-title {
+  font-weight: 800;
+  padding: 16px 16px 0;
+}
+.tcr-scope .tcr-experience .tcr-step-text {
+  color: #2b2f37;
+  padding: 0 16px 20px;
+}
+.tcr-scope {
+  /* ---- Specs ---- */
+}
+.tcr-scope .tcr-specs {
+  background: #f6f7f8;
+}
+.tcr-scope .tcr-specs .tcr-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.tcr-scope .tcr-specs .tcr-spec-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 28px rgba(15, 17, 21, 0.06);
+}
+.tcr-scope .tcr-specs .tcr-spec-list {
+  margin: 0;
+  padding-left: 20px;
+  color: #2b2f37;
+}
+.tcr-scope .tcr-specs .tcr-spec-cta {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.tcr-scope {
+  /* ---- Gallery ---- */
+}
+.tcr-scope .tcr-gallery .tcr-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+.tcr-scope .tcr-gallery .tcr-gallery-img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+  border: 1px solid #e5e7eb;
+}
+
 .marketing-section .marketing-content h2 {
   opacity: 0;
   animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
@@ -833,6 +1892,310 @@ body {
 }
 .pie-sitio .base-pie > * {
   animation-name: motion-in-from-bottom;
+}
+
+/* ===== Animaciones: Volkswagen T-Cross ===== */
+.tcr-scope {
+  /* HERO */
+}
+.tcr-scope .tcr-hero .tcr-hero-media {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.tcr-scope .tcr-hero .tcr-hero-accent {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 60ms;
+}
+.tcr-scope .tcr-hero .tcr-hero-image {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 140ms;
+}
+.tcr-scope .tcr-hero .tcr-hero-title {
+  opacity: 0;
+  animation: motion-in-from-right 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.tcr-scope .tcr-hero .tcr-hero-text {
+  opacity: 0;
+  animation: motion-in-from-right 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 90ms;
+}
+.tcr-scope .tcr-hero .tcr-hero-bullets {
+  opacity: 0;
+  animation: motion-in-from-right 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 160ms;
+}
+.tcr-scope .tcr-hero .tcr-cta-group {
+  opacity: 0;
+  animation: motion-in-from-right 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 230ms;
+}
+.tcr-scope {
+  /* HIGHLIGHTS */
+}
+.tcr-scope .tcr-highlights .tcr-card {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.tcr-scope .tcr-highlights .tcr-card:nth-child(1) {
+  animation-delay: 60ms;
+}
+.tcr-scope .tcr-highlights .tcr-card:nth-child(2) {
+  animation-delay: 140ms;
+}
+.tcr-scope .tcr-highlights .tcr-card:nth-child(3) {
+  animation-delay: 220ms;
+}
+.tcr-scope {
+  /* EXPERIENCE */
+}
+.tcr-scope .tcr-experience .tcr-step {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.tcr-scope .tcr-experience .tcr-step:nth-child(1) {
+  animation-delay: 60ms;
+}
+.tcr-scope .tcr-experience .tcr-step:nth-child(2) {
+  animation-delay: 140ms;
+}
+.tcr-scope .tcr-experience .tcr-step:nth-child(3) {
+  animation-delay: 220ms;
+}
+.tcr-scope .tcr-experience .tcr-step .tcr-step-img {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 80ms;
+}
+.tcr-scope {
+  /* SPECS */
+}
+.tcr-scope .tcr-specs .tcr-spec-card {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.tcr-scope .tcr-specs .tcr-spec-card:nth-child(1) {
+  animation-delay: 60ms;
+}
+.tcr-scope .tcr-specs .tcr-spec-card:nth-child(2) {
+  animation-delay: 140ms;
+}
+.tcr-scope .tcr-specs .tcr-spec-card:nth-child(3) {
+  animation-delay: 220ms;
+}
+.tcr-scope .tcr-specs .tcr-spec-cta {
+  opacity: 0;
+  animation: motion-in-from-right 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 260ms;
+}
+.tcr-scope {
+  /* GALLERY */
+}
+.tcr-scope .tcr-gallery .tcr-gallery-img {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.tcr-scope .tcr-gallery .tcr-gallery-img:nth-child(1) {
+  animation-delay: 60ms;
+}
+.tcr-scope .tcr-gallery .tcr-gallery-img:nth-child(2) {
+  animation-delay: 140ms;
+}
+.tcr-scope .tcr-gallery .tcr-gallery-img:nth-child(3) {
+  animation-delay: 220ms;
+}
+.tcr-scope {
+  /* Reduce motion */
+}
+@media (prefers-reduced-motion: reduce) {
+  .tcr-scope .tcr-hero *,
+  .tcr-scope .tcr-highlights .tcr-card,
+  .tcr-scope .tcr-experience .tcr-step,
+  .tcr-scope .tcr-specs .tcr-spec-card,
+  .tcr-scope .tcr-specs .tcr-spec-cta,
+  .tcr-scope .tcr-gallery .tcr-gallery-img {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* ===== Animaciones: Mercedes-Benz Clase C ===== */
+.mbc-scope {
+  /* ---------- HERO ---------- */
+}
+.mbc-scope .mbc-hero .mbc-hero-title {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.mbc-scope .mbc-hero .mbc-hero-text {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 90ms;
+}
+.mbc-scope .mbc-hero .mbc-hero-bullets {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 160ms;
+}
+.mbc-scope .mbc-hero .mbc-cta-group {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 230ms;
+}
+.mbc-scope .mbc-hero .mbc-hero-media {
+  position: relative;
+}
+.mbc-scope .mbc-hero .mbc-hero-accent {
+  opacity: 0;
+  animation: motion-in-from-right 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 80ms;
+}
+.mbc-scope .mbc-hero .mbc-hero-image {
+  opacity: 0;
+  animation: motion-in-from-right 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 160ms;
+}
+.mbc-scope {
+  /* ---------- HIGHLIGHTS (cards) ---------- */
+}
+.mbc-scope .mbc-highlights .mbc-card {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.mbc-scope .mbc-highlights .mbc-card:nth-child(1) {
+  animation-delay: 60ms;
+}
+.mbc-scope .mbc-highlights .mbc-card:nth-child(2) {
+  animation-delay: 140ms;
+}
+.mbc-scope .mbc-highlights .mbc-card:nth-child(3) {
+  animation-delay: 220ms;
+}
+.mbc-scope {
+  /* ---------- EXPERIENCE (pasos) ---------- */
+}
+.mbc-scope .mbc-experience .mbc-step {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.mbc-scope .mbc-experience .mbc-step:nth-child(1) {
+  animation-delay: 60ms;
+}
+.mbc-scope .mbc-experience .mbc-step:nth-child(2) {
+  animation-delay: 140ms;
+}
+.mbc-scope .mbc-experience .mbc-step:nth-child(3) {
+  animation-delay: 220ms;
+}
+.mbc-scope .mbc-experience .mbc-step .mbc-step-img {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 80ms;
+}
+.mbc-scope {
+  /* ---------- SPECS ---------- */
+}
+.mbc-scope .mbc-specs .mbc-spec-card {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.mbc-scope .mbc-specs .mbc-spec-card:nth-child(1) {
+  animation-delay: 60ms;
+}
+.mbc-scope .mbc-specs .mbc-spec-card:nth-child(2) {
+  animation-delay: 140ms;
+}
+.mbc-scope .mbc-specs .mbc-spec-card:nth-child(3) {
+  animation-delay: 220ms;
+}
+.mbc-scope .mbc-specs .mbc-spec-cta {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 260ms;
+}
+.mbc-scope {
+  /* ---------- GALLERY ---------- */
+}
+.mbc-scope .mbc-gallery .mbc-gallery-img {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.mbc-scope .mbc-gallery .mbc-gallery-img:nth-child(1) {
+  animation-delay: 60ms;
+}
+.mbc-scope .mbc-gallery .mbc-gallery-img:nth-child(2) {
+  animation-delay: 140ms;
+}
+.mbc-scope .mbc-gallery .mbc-gallery-img:nth-child(3) {
+  animation-delay: 220ms;
+}
+.mbc-scope {
+  /* ---------- Accesibilidad: reduce motion ---------- */
+}
+@media (prefers-reduced-motion: reduce) {
+  .mbc-scope .mbc-hero-title,
+  .mbc-scope .mbc-hero-text,
+  .mbc-scope .mbc-hero-bullets,
+  .mbc-scope .mbc-cta-group,
+  .mbc-scope .mbc-hero-accent,
+  .mbc-scope .mbc-hero-image,
+  .mbc-scope .mbc-card,
+  .mbc-scope .mbc-step,
+  .mbc-scope .mbc-step .mbc-step-img,
+  .mbc-scope .mbc-spec-card,
+  .mbc-scope .mbc-spec-cta,
+  .mbc-scope .mbc-gallery-img {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Animaciones de entrada para la agenda */
+.booking-scope .hero-title {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.booking-scope .hero-text {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 90ms;
+}
+.booking-scope .hero-bullets {
+  opacity: 0;
+  animation: motion-in-from-left 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 160ms;
+}
+.booking-scope .hero-art {
+  opacity: 0;
+  animation: motion-in-from-right 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: 120ms;
+}
+.booking-scope .form-card {
+  opacity: 0;
+  animation: motion-in-from-top 700ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.booking-scope .form-card:nth-of-type(1) {
+  animation-delay: 60ms;
+}
+.booking-scope .form-card:nth-of-type(2) {
+  animation-delay: 140ms;
+}
+.booking-scope .form-card:nth-of-type(3) {
+  animation-delay: 220ms;
+}
+@media (prefers-reduced-motion: reduce) {
+  .booking-scope .hero-title,
+  .booking-scope .hero-text,
+  .booking-scope .hero-bullets,
+  .booking-scope .hero-art,
+  .booking-scope .form-card {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

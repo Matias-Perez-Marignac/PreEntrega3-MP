@@ -1,0 +1,160 @@
+@use "../utilities/motion";
+
+/* ===== Animaciones: Mercedes-Benz Clase C ===== */
+.mbc-scope {
+
+    /* ---------- HERO ---------- */
+    .mbc-hero {
+        .mbc-hero-title {
+            @include motion.motion-initial;
+            @include motion.from-left;
+        }
+
+        .mbc-hero-text {
+            @include motion.motion-initial;
+            @include motion.from-left;
+            animation-delay: 90ms;
+        }
+
+        .mbc-hero-bullets {
+            @include motion.motion-initial;
+            @include motion.from-left;
+            animation-delay: 160ms;
+        }
+
+        .mbc-cta-group {
+            @include motion.motion-initial;
+            @include motion.from-left;
+            animation-delay: 230ms;
+        }
+
+        .mbc-hero-media {
+            position: relative;
+        }
+
+        .mbc-hero-accent {
+            @include motion.motion-initial;
+            @include motion.from-right;
+            animation-delay: 80ms;
+        }
+
+        .mbc-hero-image {
+            @include motion.motion-initial;
+            @include motion.from-right;
+            animation-delay: 160ms;
+        }
+    }
+
+    /* ---------- HIGHLIGHTS (cards) ---------- */
+    .mbc-highlights {
+        .mbc-card {
+            @include motion.motion-initial;
+            @include motion.from-top;
+
+            &:nth-child(1) {
+                animation-delay: 60ms;
+            }
+
+            &:nth-child(2) {
+                animation-delay: 140ms;
+            }
+
+            &:nth-child(3) {
+                animation-delay: 220ms;
+            }
+        }
+    }
+
+    /* ---------- EXPERIENCE (pasos) ---------- */
+    .mbc-experience {
+        .mbc-step {
+            @include motion.motion-initial;
+            @include motion.from-top;
+
+            &:nth-child(1) {
+                animation-delay: 60ms;
+            }
+
+            &:nth-child(2) {
+                animation-delay: 140ms;
+            }
+
+            &:nth-child(3) {
+                animation-delay: 220ms;
+            }
+
+            .mbc-step-img {
+                @include motion.motion-initial;
+                @include motion.from-top;
+                animation-delay: 80ms;
+            }
+        }
+    }
+
+    /* ---------- SPECS ---------- */
+    .mbc-specs {
+        .mbc-spec-card {
+            @include motion.motion-initial;
+            @include motion.from-top;
+
+            &:nth-child(1) {
+                animation-delay: 60ms;
+            }
+
+            &:nth-child(2) {
+                animation-delay: 140ms;
+            }
+
+            &:nth-child(3) {
+                animation-delay: 220ms;
+            }
+        }
+
+        .mbc-spec-cta {
+            @include motion.motion-initial;
+            @include motion.from-left;
+            animation-delay: 260ms;
+        }
+    }
+
+    /* ---------- GALLERY ---------- */
+    .mbc-gallery {
+        .mbc-gallery-img {
+            @include motion.motion-initial;
+            @include motion.from-top;
+
+            &:nth-child(1) {
+                animation-delay: 60ms;
+            }
+
+            &:nth-child(2) {
+                animation-delay: 140ms;
+            }
+
+            &:nth-child(3) {
+                animation-delay: 220ms;
+            }
+        }
+    }
+
+    /* ---------- Accesibilidad: reduce motion ---------- */
+    @media (prefers-reduced-motion: reduce) {
+
+        .mbc-hero-title,
+        .mbc-hero-text,
+        .mbc-hero-bullets,
+        .mbc-cta-group,
+        .mbc-hero-accent,
+        .mbc-hero-image,
+        .mbc-card,
+        .mbc-step,
+        .mbc-step .mbc-step-img,
+        .mbc-spec-card,
+        .mbc-spec-cta,
+        .mbc-gallery-img {
+            animation: none !important;
+            transform: none !important;
+            opacity: 1 !important;
+        }
+    }
+}

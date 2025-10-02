@@ -1,0 +1,147 @@
+@use "../utilities/motion";
+
+/* ===== Animaciones: Volkswagen T-Cross ===== */
+.tcr-scope {
+
+    /* HERO */
+    .tcr-hero {
+        .tcr-hero-media {
+            @include motion.motion-initial;
+            @include motion.from-left;
+        }
+
+        .tcr-hero-accent {
+            @include motion.motion-initial;
+            @include motion.from-left;
+            animation-delay: 60ms;
+        }
+
+        .tcr-hero-image {
+            @include motion.motion-initial;
+            @include motion.from-left;
+            animation-delay: 140ms;
+        }
+
+        .tcr-hero-title {
+            @include motion.motion-initial;
+            @include motion.from-right;
+        }
+
+        .tcr-hero-text {
+            @include motion.motion-initial;
+            @include motion.from-right;
+            animation-delay: 90ms;
+        }
+
+        .tcr-hero-bullets {
+            @include motion.motion-initial;
+            @include motion.from-right;
+            animation-delay: 160ms;
+        }
+
+        .tcr-cta-group {
+            @include motion.motion-initial;
+            @include motion.from-right;
+            animation-delay: 230ms;
+        }
+    }
+
+    /* HIGHLIGHTS */
+    .tcr-highlights .tcr-card {
+        @include motion.motion-initial;
+        @include motion.from-top;
+
+        &:nth-child(1) {
+            animation-delay: 60ms;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 140ms;
+        }
+
+        &:nth-child(3) {
+            animation-delay: 220ms;
+        }
+    }
+
+    /* EXPERIENCE */
+    .tcr-experience .tcr-step {
+        @include motion.motion-initial;
+        @include motion.from-top;
+
+        &:nth-child(1) {
+            animation-delay: 60ms;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 140ms;
+        }
+
+        &:nth-child(3) {
+            animation-delay: 220ms;
+        }
+
+        .tcr-step-img {
+            @include motion.motion-initial;
+            @include motion.from-top;
+            animation-delay: 80ms;
+        }
+    }
+
+    /* SPECS */
+    .tcr-specs .tcr-spec-card {
+        @include motion.motion-initial;
+        @include motion.from-top;
+
+        &:nth-child(1) {
+            animation-delay: 60ms;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 140ms;
+        }
+
+        &:nth-child(3) {
+            animation-delay: 220ms;
+        }
+    }
+
+    .tcr-specs .tcr-spec-cta {
+        @include motion.motion-initial;
+        @include motion.from-right;
+        animation-delay: 260ms;
+    }
+
+    /* GALLERY */
+    .tcr-gallery .tcr-gallery-img {
+        @include motion.motion-initial;
+        @include motion.from-top;
+
+        &:nth-child(1) {
+            animation-delay: 60ms;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 140ms;
+        }
+
+        &:nth-child(3) {
+            animation-delay: 220ms;
+        }
+    }
+
+    /* Reduce motion */
+    @media (prefers-reduced-motion: reduce) {
+
+        .tcr-hero *,
+        .tcr-highlights .tcr-card,
+        .tcr-experience .tcr-step,
+        .tcr-specs .tcr-spec-card,
+        .tcr-specs .tcr-spec-cta,
+        .tcr-gallery .tcr-gallery-img {
+            animation: none !important;
+            transform: none !important;
+            opacity: 1 !important;
+        }
+    }
+}

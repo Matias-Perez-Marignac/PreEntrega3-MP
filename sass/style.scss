@@ -18,9 +18,14 @@
 @use "components/destacados";
 @use "components/footer";
 @use "components/vehiculos";
-@use "components/comprar";
+@use "components/booking-appointment";
 @use "components/corolla";
+@use "components/mbc-presentation";
+@use "components/tcr-presentation";
 
 // PAGES
 @use "pages/index-animations";
+@use "pages/tcr-animations";
+@use "pages/mbc-animations";
+@use "pages/booking-animations"
 

@@ -70,140 +70,200 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="compra-section">
-            <div class="container">
-                <h2 class="compra-title">¿Por qué elegirnos para comprar tu auto?</h2>
-                <p class="compra-text">
-                    Te ofrecemos vehículos con garantía oficial, servicio postventa de confianza
-                    y la mejor experiencia de compra en concesionarios certificados.
-                </p>
+    <main class="booking-scope" id="booking-appointment">
+        <!-- Intro -->
+        <section class="booking-hero" aria-labelledby="booking-title">
+            <div class="booking-container hero-grid">
+                <div class="hero-copy">
+                    <h1 id="booking-title" class="hero-title">Agendá tu compra</h1>
+                    <p class="hero-text">Coordiná una cita con un asesor para ver unidades, definir versión y opciones
+                        de financiación.</p>
+                    <ul class="hero-bullets">
+                        <li>Atención personalizada</li>
+                        <li>Test drive sujeto a disponibilidad</li>
+                        <li>Entrega estimada y documentación</li>
+                    </ul>
+                </div>
+                <div class="hero-art" aria-hidden="true">
+                    <div class="hero-accent"></div>
+                    <img src="../assets/comprarndo-tu-auto.jpg" alt="comprando tu primer auto">
+                </div>
             </div>
         </section>
-        <section class="booking-section">
-            <div class="container">
-                <!-- Grid de tarjetas para completar -->
-                <section class="card-grid">
-                    <!-- Datos personales -->
 
-                    <article class="card">
-                        <header class="card-header">
-                            <h3 class="card-title">Datos personales</h3>
-                            <p class="card-subtitle">Contanos cómo contactarte</p>
-                        </header>
+        <!-- Formulario -->
+        <section class="booking-section booking-form" aria-labelledby="form-title">
+            <div class="booking-container">
+                <h2 id="form-title" class="section-title">Completá tus datos</h2>
 
-                        <form class="card-form">
-                            <div class="form-row">
-                                <div class="field">
-                                    <label class="field-label" for="first-name">Nombre</label>
-                                    <input id="first-name" type="text" placeholder="Ej: Juan">
-                                </div>
-                                <div class="field">
-                                    <label class="field-label" for="last-name">Apellido</label>
-                                    <input id="last-name" type="text" placeholder="Ej: Pérez">
-                                </div>
-                            </div>
+                <form class="form-shell" action="#" method="post" novalidate>
+                    <!-- Paso 1: datos personales -->
+                    <fieldset class="form-card" aria-labelledby="personal-title">
+                        <legend id="personal-title" class="card-title">Datos personales</legend>
 
-                            <div class="form-row">
-                                <div class="field">
-                                    <label class="field-label" for="email">Email</label>
-                                    <input id="email" type="email" placeholder="juan@mail.com">
-                                </div>
-                                <div class="field">
-                                    <label class="field-label" for="phone">Teléfono</label>
-                                    <input id="phone" type="tel" placeholder="+54 9 11 1234-5678">
-                                </div>
-                            </div>
+                        <div class="grid-2">
+                            <label class="form-field">
+                                <span class="field-label">Nombre</span>
+                                <input class="field-input" type="text" name="nombre" placeholder="Ej: Juan" required>
+                            </label>
 
-                            <div class="field">
+                            <label class="form-field">
+                                <span class="field-label">Apellido</span>
+                                <input class="field-input" type="text" name="apellido" placeholder="Ej: Pérez" required>
+                            </label>
+
+                            <label class="form-field">
+                                <span class="field-label">Email</span>
+                                <input class="field-input" type="email" name="email" placeholder="juan@mail.com"
+                                    required>
+                            </label>
+
+                            <label class="form-field">
+                                <span class="field-label">Teléfono</span>
+                                <input class="field-input" type="tel" name="telefono" placeholder="+54 9 11 1234-5678"
+                                    required>
+                            </label>
+                        </div>
+
+                        <div class="grid-3">
+                            <fieldset class="form-field form-field-inline">
                                 <span class="field-label">Preferencia de contacto</span>
-                                <div class="option-group">
-                                    <label class="option"><input type="radio" name="contact"> Email</label>
-                                    <label class="option"><input type="radio" name="contact"> WhatsApp</label>
-                                    <label class="option"><input type="radio" name="contact"> Teléfono</label>
-                                </div>
-                            </div>
-                        </form>
-                    </article>
+                                <label class="choice"><input type="radio" name="contacto" value="email" checked>
+                                    Email</label>
+                                <label class="choice"><input type="radio" name="contacto" value="whatsapp">
+                                    WhatsApp</label>
+                                <label class="choice"><input type="radio" name="contacto" value="telefono">
+                                    Teléfono</label>
+                            </fieldset>
+                        </div>
+                    </fieldset>
 
-                    <!-- Vehiculo -->
-                    <article class="card">
-                        <header class="card-header">
-                            <h3 class="card-title">Tu vehículo</h3>
-                            <p class="card-subtitle">Elegí modelo y carrocería</p>
-                        </header>
+                    <!-- Paso 2: vehículo -->
+                    <fieldset class="form-card" aria-labelledby="vehicle-title">
+                        <legend id="vehicle-title" class="card-title">Tu vehículo</legend>
 
-                        <form class="card-form">
-                            <div class="field">
-                                <label class="field-label" for="brand">Marca</label>
-                                <select id="brand">
+                        <div class="grid-3">
+                            <label class="form-field">
+                                <span class="field-label">Marca</span>
+                                <select class="field-input" name="marca" required>
+                                    <option value="" disabled selected>Elegí una marca</option>
                                     <option>Mercedes-Benz</option>
-                                    <option>Smart</option>
-                                    <option>AMG</option>
+                                    <option>Volkswagen</option>
+                                    <option>Toyota</option>
+                                    <option>Chevrolet</option>
                                 </select>
-                            </div>
+                            </label>
 
-                            <div class="form-row">
-                                <div class="field">
-                                    <label class="field-label" for="model">Modelo</label>
-                                    <select id="model">
-                                        <option>Clase A</option>
-                                        <option>Clase C</option>
-                                        <option>GLA</option>
-                                        <option>GLC</option>
-                                        <option>EQS</option>
-                                    </select>
-                                </div>
-                                <div class="field">
-                                    <label class="field-label" for="year">Año</label>
-                                    <select id="year">
-                                        <option>2025</option>
-                                        <option>2024</option>
-                                        <option>2023</option>
-                                        <option>2022</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </form>
-                    </article>
+                            <label class="form-field">
+                                <span class="field-label">Modelo</span>
+                                <input class="field-input" type="text" name="modelo" placeholder="Ej: Clase C / T-Cross"
+                                    required>
+                            </label>
 
-                    <!-- Ubicacion -->
-                    <article class="card">
-                        <header class="card-header">
-                            <h3 class="card-title">Dónde querés hacer la cita</h3>
-                            <p class="card-subtitle">Elegí tu concesionario</p>
-                        </header>
-
-                        <form class="card-form">
-                            <div class="field">
-                                <label class="field-label" for="state">Provincia</label>
-                                <select id="state">
-                                    <option>Buenos Aires</option>
-                                    <option>Córdoba</option>
-                                    <option>Mendoza</option>
-                                    <option>Santa Fe</option>
+                            <label class="form-field">
+                                <span class="field-label">Año</span>
+                                <select class="field-input" name="anio" required>
+                                    <option>2026</option>
+                                    <option selected>2025</option>
+                                    <option>2024</option>
                                 </select>
-                            </div>
+                            </label>
+                        </div>
 
-                            <div class="field">
-                                <label class="field-label" for="city">Ciudad</label>
-                                <input id="city" type="text" placeholder="Ej: Vicente López">
-                            </div>
+                        <div class="grid-3">
+                            <label class="form-field">
+                                <span class="field-label">Versión / Motorización</span>
+                                <input class="field-input" type="text" name="version"
+                                    placeholder="Ej: AMG Line / 1.0 TSI">
+                            </label>
+                            <label class="form-field">
+                                <span class="field-label">Carrocería</span>
+                                <select class="field-input" name="carroceria">
+                                    <option>Sedán</option>
+                                    <option>SUV</option>
+                                    <option>Hatch</option>
+                                </select>
+                            </label>
+                            <label class="form-field">
+                                <span class="field-label">Color preferido</span>
+                                <input class="field-input" type="text" name="color" placeholder="Ej: Blanco / Negro">
+                            </label>
+                        </div>
+                    </fieldset>
 
-                            <div class="field">
-                                <label class="field-label" for="dealer">Sucursal</label>
-                                <select id="dealer">
+                    <!-- Paso 3: lugar + fecha -->
+                    <fieldset class="form-card" aria-labelledby="place-title">
+                        <legend id="place-title" class="card-title">Dónde y cuándo</legend>
+
+                        <div class="grid-3">
+                            <label class="form-field">
+                                <span class="field-label">Provincia</span>
+                                <input class="field-input" type="text" name="provincia" placeholder="Buenos Aires"
+                                    required>
+                            </label>
+
+                            <label class="form-field">
+                                <span class="field-label">Ciudad</span>
+                                <input class="field-input" type="text" name="ciudad" placeholder="Ej: Vicente López"
+                                    required>
+                            </label>
+
+                            <label class="form-field">
+                                <span class="field-label">Sucursal</span>
+                                <select class="field-input" name="sucursal" required>
                                     <option>Concesionario Norte</option>
                                     <option>Concesionario Centro</option>
                                     <option>Concesionario Sur</option>
                                 </select>
-                            </div>
-                        </form>
-                    </article>
-                </section>
+                            </label>
+                        </div>
 
+                        <div class="grid-3">
+                            <label class="form-field">
+                                <span class="field-label">Fecha preferida</span>
+                                <input class="field-input" type="date" name="fecha" required>
+                            </label>
 
+                            <label class="form-field">
+                                <span class="field-label">Horario</span>
+                                <select class="field-input" name="hora" required>
+                                    <option>09:00</option>
+                                    <option>10:30</option>
+                                    <option>12:00</option>
+                                    <option>14:30</option>
+                                    <option>16:00</option>
+                                    <option>17:30</option>
+                                </select>
+                            </label>
+
+                            <label class="form-field">
+                                <span class="field-label">¿Test drive?</span>
+                                <select class="field-input" name="testdrive" required>
+                                    <option>Si, quiero probarlo</option>
+                                    <option>No por ahora</option>
+                                </select>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Consentimiento -->
+                    <div class="form-consent">
+                        <label class="consent">
+                            <input type="checkbox" required>
+                            <span>Autorizo el uso de mis datos para contactar sobre esta solicitud.</span>
+                        </label>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="form-actions">
+                        <button class="btn btn-primary" type="submit">Confirmar cita</button>
+                        <button class="btn btn-outline" type="reset">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
+
 
     <!-- ===================================================== -->
     <!-- Footer -->

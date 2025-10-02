@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Vehículos</title>
 
     <!-- ====Bootstrap==== -->
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- ====Font: Titillium Web==== -->
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;500;600;700;900&display=swap"
         rel="stylesheet">
 
     <!-- ====Font Awesome (para íconos de la nav)==== -->
-    
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
     <!-- ====CSS==== -->
-    
+
     <link rel="stylesheet" href="../../css/styles.css" />
 
     <!-- ====Icon==== -->
-    
-    <link rel="icon" type="image/png" href="../assets/logo-pag.png" />
+
+    <link rel="icon" type="image/png" href="../../assets/logo-pag.png" />
 
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary-subtle py-2">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
-                    <img src="../assets/logo-pag.png" alt="AutoNexo" height="36">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="../../index.html">
+                    <img src="../../assets/logo-pag.png" alt="AutoNexo" height="36">
 
                 </a>
 
@@ -47,9 +49,9 @@
                     <!-- izquierda -->
 
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="vehiculos.html">Vehículos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Beneficios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Compra</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../vehiculos.html">Vehículos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">Beneficios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../comprar.html">Compra</a></li>
                         <li class="nav-item"><a class="nav-link" href="#titulo-pie">Propietarios</a></li>
                     </ul>
 
@@ -68,13 +70,154 @@
         </nav>
 
     </header>
-    <main>
+    <main class="tcr-scope" id="tcr-page">
+        <!-- HERO -->
+        <section class="tcr-hero" aria-labelledby="tcr-hero-title">
+            <div class="tcr-container tcr-hero-grid">
+                <figure class="tcr-hero-media">
+                    <div class="tcr-hero-accent" aria-hidden="true"></div>
+                    <img src="../../assets/Volkswagen-T-Cross-Free-PNG.png" alt="Volkswagen T-Cross color blanco"
+                        class="tcr-hero-image">
+                </figure>
 
+                <div class="tcr-hero-copy">
+                    <h1 id="tcr-hero-title" class="tcr-hero-title">Volkswagen <span>T-Cross</span></h1>
+                    <p class="tcr-hero-text">
+                        SUV urbano versátil: tamaño justo para la ciudad, espacio real para todo lo demás.
+                    </p>
+                    <ul class="tcr-hero-bullets">
+                        <li>Plataforma MQB con seguridad de segmento superior</li>
+                        <li>Conectividad total y asistentes de conducción</li>
+                        <li>Baúl modulable y asientos traseros corredizos</li>
+                    </ul>
+                    <div class="tcr-cta-group">
+                        <a href="#tcr-specs" class="tcr-btn tcr-btn-primary">Ver especificaciones</a>
+                        <a href="#tcr-gallery" class="tcr-btn tcr-btn-outline">Galería</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESTACADOS -->
+        <section class="tcr-section tcr-highlights" aria-labelledby="tcr-highlights-title">
+            <div class="tcr-container">
+                <header class="tcr-section-head">
+                    <h2 id="tcr-highlights-title" class="tcr-section-title">Hecha para moverse</h2>
+                    <p class="tcr-section-sub">Altura justa, visibilidad superior y comodidad para el día a día.</p>
+                </header>
+
+                <div class="tcr-cards">
+                    <article class="tcr-card">
+                        <h3 class="tcr-card-title">Espacio Inteligente</h3>
+                        <p class="tcr-card-text">Asientos traseros corredizos y respaldo abatible: carga más sin
+                            resignar confort.</p>
+                    </article>
+                    <article class="tcr-card">
+                        <h3 class="tcr-card-title">Tecnología útil</h3>
+                        <p class="tcr-card-text">Pantalla táctil, App-Connect y cámaras/sensores que simplifican
+                            maniobras.</p>
+                    </article>
+                    <article class="tcr-card">
+                        <h3 class="tcr-card-title">Seguridad Volkswagen</h3>
+                        <p class="tcr-card-text">Estructura reforzada, múltiples airbags y controles electrónicos al
+                            servicio del conductor.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA -->
+        <section class="tcr-section tcr-experience" aria-labelledby="tcr-experience-title">
+            <div class="tcr-container">
+                <header class="tcr-section-head">
+                    <h2 id="tcr-experience-title" class="tcr-section-title">Viví la T-Cross</h2>
+                </header>
+
+                <ol class="tcr-steps">
+                    <li class="tcr-step">
+                        <img src="../../assets/tcr-images/Volkswagen-T-Cross-2019-1280-1ba282b92d1d79b3f97d8b7c4067c0147f.jpg" alt="Perfil de Volkswagen T-Cross" class="tcr-step-img">
+                        <div class="tcr-step-badge">1</div>
+                        <h3 class="tcr-step-title">Postura elevada</h3>
+                        <p class="tcr-step-text">Mejor ángulo de visión y entrada/salida cómoda para todos.</p>
+                    </li>
+                    <li class="tcr-step">
+                        <img src="../../assets/tcr-images/Volkswagen-T-Cross-2024-1280-30b58b5af22e880017830bdcf0cb202823.jpg" alt="Interior de Volkswagen T-Cross"
+                            class="tcr-step-img">
+                        <div class="tcr-step-badge">2</div>
+                        <h3 class="tcr-step-title">Cabina conectada</h3>
+                        <p class="tcr-step-text">Panel claro, comandos intuitivos y conectividad inmediata.</p>
+                    </li>
+                    <li class="tcr-step">
+                        <img src="../../assets/tcr-images/Volkswagen-T-Cross-2019-1280-2f7143212f632631821fa5daecb5a0cbc4.jpg" alt="Detalle de Volkswagen T-Cross" class="tcr-step-img">
+                        <div class="tcr-step-badge">3</div>
+                        <h3 class="tcr-step-title">Eficiencia urbana</h3>
+                        <p class="tcr-step-text">Dirección precisa y consumo contenido para la ciudad.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ESPECIFICACIONES -->
+        <section class="tcr-section tcr-specs" id="tcr-specs" aria-labelledby="tcr-specs-title">
+            <div class="tcr-container">
+                <header class="tcr-section-head">
+                    <h2 id="tcr-specs-title" class="tcr-section-title">Ficha rápida</h2>
+                    <p class="tcr-section-sub">Valores representativos; pueden variar según versión.</p>
+                </header>
+
+                <div class="tcr-specs-grid">
+                    <article class="tcr-spec-card">
+                        <h3 class="tcr-card-title">Prestaciones</h3>
+                        <ul class="tcr-spec-list">
+                            <li>Motor eficiente con excelente torque urbano</li>
+                            <li>Consumo mixto competitivo</li>
+                            <li>Modos de conducción</li>
+                        </ul>
+                    </article>
+                    <article class="tcr-spec-card">
+                        <h3 class="tcr-card-title">Tecnología & Seguridad</h3>
+                        <ul class="tcr-spec-list">
+                            <li>App-Connect / Wireless</li>
+                            <li>ADAS: ACC, frenado autónomo*</li>
+                            <li>Faros LED y sensores 360*</li>
+                        </ul>
+                    </article>
+                    <article class="tcr-spec-card">
+                        <h3 class="tcr-card-title">Confort</h3>
+                        <ul class="tcr-spec-list">
+                            <li>Climatizador</li>
+                            <li>Asientos traseros corredizos</li>
+                            <li>Baúl ampliable</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="tcr-spec-cta">
+                    <a href="#contacto" class="tcr-btn tcr-btn-primary">Quiero cotizar</a>
+                    <a href="#test-drive" class="tcr-btn tcr-btn-outline">Agendar test drive</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
+        <section class="tcr-section tcr-gallery" id="tcr-gallery" aria-labelledby="tcr-gallery-title">
+            <div class="tcr-container">
+                <header class="tcr-section-head">
+                    <h2 id="tcr-gallery-title" class="tcr-section-title">Galería</h2>
+                </header>
+                <div class="tcr-gallery-grid">
+                    <img src="../../assets/tcr-images/Volkswagen-T-Cross-2019-1280-1ba282b92d1d79b3f97d8b7c4067c0147f.jpg" alt="Perfil T-Cross" class="tcr-gallery-img">
+                    <img src="../../assets/tcr-images/Volkswagen-T-Cross-2024-1280-30b58b5af22e880017830bdcf0cb202823.jpg" alt="Interior T-Cross" class="tcr-gallery-img">
+                    <img src="../../assets/tcr-images/Volkswagen-T-Cross-2019-1280-2f7143212f632631821fa5daecb5a0cbc4.jpg" alt="Detalle T-Cross" class="tcr-gallery-img">
+                </div>
+            </div>
+        </section>
     </main>
+
     <!-- ===================================================== -->
     <!-- Footer -->
     <!-- ===================================================== -->
-        
+
     <footer class="pie-sitio" aria-labelledby="titulo-pie">
         <div class="container contenedor-pie">
             <h2 id="titulo-pie" class="visually-hidden">Información del sitio</h2>
@@ -181,9 +324,10 @@
         </div>
     </footer>
 
-        <!-- Bootstrap JS -->
-        
+    <!-- Bootstrap JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    
+
 </body>
+
 </html>
