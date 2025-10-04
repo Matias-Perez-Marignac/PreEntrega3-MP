@@ -395,9 +395,6 @@
 .mbc-scope .mbc-gallery .mbc-gallery-img:nth-child(3) {
   animation-delay: 220ms;
 }
-.mbc-scope {
-  /* ---------- Accesibilidad: reduce motion ---------- */
-}
 @media (prefers-reduced-motion: reduce) {
   .mbc-scope .mbc-hero-title,
   .mbc-scope .mbc-hero-text,
@@ -2130,9 +2127,6 @@ body {
 }
 .mbc-scope .mbc-gallery .mbc-gallery-img:nth-child(3) {
   animation-delay: 220ms;
-}
-.mbc-scope {
-  /* ---------- Accesibilidad: reduce motion ---------- */
 }
 @media (prefers-reduced-motion: reduce) {
   .mbc-scope .mbc-hero-title,
